@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's Take a Quiz</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <nav>
+        <div class="score">
+            <a href="#">View Highscore</a>
+        </div>
+        <div id="timer">
+            <p class="time">Time: 00</p>
+        </div>
+    </nav>
     <header class="title">
         <h1>Let's Take a Quiz!</h1>
     </header>
     <div class="container">
-        <div id="question-container" class="hide"></div>
+        <div id="question-container" class="hide">
             <p id="questions"></p>
-            <button id="btn0"><span id="choice0"></span></button>
-            <button id="btn1"><span id="choice1"></span></button>
-            <button id="btn2"><span id="choice2"></span></button>
-            <button id="btn3"><span id="choice3"></span></button>
+            <button id="btn"><span id="choice0"></span>Answer 1</button>
+            <button id="btn"><span id="choice1"></span>Answer 2</button>
+            <button id="btn"><span id="choice2"></span>Answer 3</button>
+            <button id="btn"><span id="choice3"></span>Answer 4</button>
+        </div>
     </div>
     <div class="start">
         <button id="start-btn" class="start-btn btn">Start</button>
     </div>
+    <div id="correct"></div>
     <script src="/script.js"></script>
 </body>
 </html>

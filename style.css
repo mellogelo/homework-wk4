@@ -1,0 +1,30 @@
+.hide {
+    display: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    overflow: hidden;
+    color: white;
+    background-color: #333;
+    align-items: center;
+}
+
+a { 
+    color: inherit;
+    text-decoration: none;
+} 
+
+#timer {
+    float: right;
+}
+
+.score {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+}
